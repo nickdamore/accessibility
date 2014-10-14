@@ -84,32 +84,51 @@
 <tr>
 <th scope="row">Clean and Jerk</th>
 <td>225</td>
-<td></td>
+
 </tr>
 
 <tr>
 <th scope="row">Snatch</th>
 <td>180</td>
-<td>January 14</td>
+
 </tr>
 
 <tr>
 <th scope="row">Squat</th>
 <td>315</td>
-<td>April 5</td>
+
 </tr>
 
 <tr>
 <th scope="row">Press</th>
 <td>155</td>
-<td>January 14</td>
+
 </tr>
 
 <tr>
 <th scope="row">Deadlift</th>
 <td>415</td>
-<td>April 5</td>
+
 </tr>
+
+<fieldset>
+  <legend>Meeting alarms</legend>
+
+  <!-- Rule 2A: "Beep" label given by native HTML label element -->
+  <input type="checkbox" id="beep"> <label for="beep">Beep</label> <br>
+  <input type="checkbox" id="mtgTitle"> <label for="mtgTitle">Display the meeting title</label> <br>
+
+  <!-- Rule 2B: Full label of checkbox includes value ("3") of embedded text input, "Flash the screen 3 times" -->
+  <input type="checkbox" id="flash">
+  <label for="flash">
+    Flash the screen
+
+    <!-- Rule 2A: label of text input given by aria-label, "Number of times to flash screen" -->
+    <input type="text" value="3" size="2" id="numTimes" aria-label="Number of times to flash screen">
+    times
+  </label>
+</fieldset>
+
 
 
   </footer>
