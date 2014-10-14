@@ -114,17 +114,17 @@
 <fieldset>
   <legend>Meeting alarms</legend>
 
-  <!-- Rule 2A: "Beep" label given by native HTML label element -->
-  <input type="checkbox" id="beep"> <label for="beep">Beep</label> <br>
-  <input type="checkbox" id="mtgTitle"> <label for="mtgTitle">Display the meeting title</label> <br>
+  <!-- Rule 2A: "\ -->
+  <input type="checkbox" id="strongman"> <label for="beep">Strongman</label> <br>
+  <input type="checkbox" id="weightlifting"> <label for="mtgTitle">Weightlifting</label> <br>
 
   <!-- Rule 2B: Full label of checkbox includes value ("3") of embedded text input, "Flash the screen 3 times" -->
   <input type="checkbox" id="flash">
   <label for="flash">
-    Flash the screen
+    Both
 
-    <!-- Rule 2A: label of text input given by aria-label, "Number of times to flash screen" -->
-    <input type="text" value="3" size="2" id="numTimes" aria-label="Number of times to flash screen">
+    <!-- Rule 2A: label of text input given by aria-label, "Both" -->
+    <input type="text" value="3" size="2" id="numTimes" aria-label="Both">
     times
   </label>
 </fieldset>
